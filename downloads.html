@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anytime Downloads</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .image-box {
+            margin: 10px;
+            text-align: center;
+        }
+
+        img {
+            width: 200px; /* Set your desired width */
+            height: 200px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .download-button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            display: block; /* Display the button as a block element to position it below the image */
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>DOWNLOAD THE GAMES NOW!!!</h1>
+
+    <div class="image-container" id="imageContainer">
+        <!-- JavaScript will populate images here -->
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const imageContainer = document.getElementById("imageContainer");
+
+
+            // Example image URLs
+            const images = [
+                { url: "https://play-lh.googleusercontent.com/OP7qhFhRrqCIkhfiUoRl1ZYWsmNriCmzcc-CPT9sXCv8Ekc6x4ra1nn9R6e_8MPQJw", downloadLink: "https://dl.juwa777.com" },
+                { url: "https://www.pandamastergame.net/wp-content/uploads/2023/03/cropped-Panda-Master-Logo-1.png", downloadLink: "https://pandamaster.vip:8888" },
+                { url: "https://play-lh.googleusercontent.com/83qqZ9SeKjz3sCEnEwUXslCcPz71ug6SLcmMmvnP45UkCTCznchxh2WUPaD30tybcehM", downloadLink: "https://download.gamevault999.com" },
+                { url: "https://www.vpowerusa.com/img/logos/vpower/vpower.png", downloadLink: "https://www.vblink777.club" },
+                { url: "https://play-lh.googleusercontent.com/r0JOVPpGZWGYfjApPDjr7TGntNFWJ6nBhjNf1uJN9_68me9EbxEO6xIUo-WJgj8oZHo", downloadLink: "http://start.firekirin.xyz:8580" },
+                { url: "https://blog.bc.game/wp-content/uploads/2022/07/MilkyWay-casino-game.png", downloadLink: "https://milkywayapp.xyz" },
+                { url: "https://phandroid.com/sweepstakes/wp-content/images/logo/River-Sweeps/2377-River-Sweeps-370x370-dark.200x200.100.png.webp", downloadLink: "https://bet777.eu/play/" },
+                { url: "https://i0.wp.com/apkwallet.net/wp-content/uploads/2023/12/Vegas_Sweeps.jpg?fit=473%2C473&ssl=1", downloadLink: "https://m.lasvegassweeps.com" },
+                { url: "https://dl.highstakesweeps.com/images/icon.png", downloadLink: "https://dl.highstakesweeps.com" },
+                { url: "https://pbs.twimg.com/profile_images/1473842358974238720/MwM5JXT1_400x400.jpg", downloadLink: "https://www.ultrapanda.mobi" },
+                { url: "https://www.theclintoncourier.net/wp-content/uploads/2023/05/xgames.png", downloadLink: "https://www.egame99.club" },
+                { url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShMGf8bSuDuovdS2uRipx9ljgMvozLGAjhq6dqOUMCtirhdEEqjvI4U01LJ1ZaA5qJntg&usqp=CAU", downloadLink: "http://start.orionstars.vip:8580" },
+                // Add more image URLs as needed
+            ];
+
+            // Populate images and download buttons
+            images.forEach((image) => {
+                const imageBox = document.createElement("div");
+                imageBox.classList.add("image-box");
+
+                const img = document.createElement("img");
+                img.src = image.url;
+                img.alt = "Image";
+
+                const downloadButton = document.createElement("a"); // Change from button to anchor (a) element
+                downloadButton.classList.add("download-button");
+                downloadButton.textContent = "Download";
+                downloadButton.href = image.downloadLink; // Set the hyperlink for each download button
+                downloadButton.target = "_blank"; // Open the link in a new tab/window
+
+                imageBox.appendChild(img);
+                imageBox.appendChild(downloadButton);
+                imageContainer.appendChild(imageBox);
+            });
+        });
+    </script>
+
+</body>
+</html>
